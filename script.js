@@ -1,10 +1,12 @@
+// global variable locations
+const linkedin = document.getElementById("linkedin");
+const github = document.getElementById("git");
 
 
 
 // github 
 document.addEventListener("DOMContentLoaded", function() {
-    const github = document.getElementById("git");
-
+    
     github.addEventListener('click', goToGit);
 
     function goToGit(event) {
@@ -16,14 +18,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // linkedin  
 document.addEventListener("DOMContentLoaded", function () {
-    const linkedin = document.getElementById("linkedin");
-
+    
     linkedin.addEventListener('click', goToLinkedIn);
     
     function goToLinkedIn(event){
         event.preventDefault();
 
         // add a profile here or something 
-        window.location.href = "https://www.linkedin.com/"
+        window.location.href = "https://www.linkedin.com/in/hans-beuren-rambayon-41904331a/"
     }
 });

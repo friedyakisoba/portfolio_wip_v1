@@ -60,8 +60,8 @@ html::-webkit-scrollbar-thumb {
 .logo {
     font-family: "Tiny5", sans-serif;
     font-size: 5rem;
-    margin-left: 5rem;
-    margin-top: 10px;
+    margin-left: 2.5rem;
+    margin-top: 0.6rem;
     color: var(--main-color);
     cursor: pointer;
     transition: 0.5 ease;
@@ -92,10 +92,11 @@ html::-webkit-scrollbar-thumb {
     font-size: 3.6rem;
     color: var(--main-color);
     display: none;
+    margin-right: 2rem;
 }
 
 @media(max-width:995px) {
-    #menu-icon {
+    .menu-icon {
         display: block;
     }
 
@@ -115,6 +116,10 @@ html::-webkit-scrollbar-thumb {
 
     .navbar:active {
         display: block;
+    }
+
+    .navbar a{
+        display: block;
         font-size: 2rem;
         margin-top: 3rem 0;
     }
@@ -133,6 +138,7 @@ section {
 }
 
 .home {
+    flex-wrap: initial;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -140,10 +146,10 @@ section {
     background-color: var(--bg-color);
 }
 
-.home .home-content {
+.home .home-content h1{
     font-size: 6rem;
     font-weight: 700;
-    line-height: 1.3;
+    line-height: 1.1;
 }
 
 span {
@@ -156,11 +162,11 @@ span {
     font-weight: 700;
 }
 
-.home-img {
+.home-image {
     border-radius: 50%;
 }
 
-.home .home-img {
+.home-image img {
     position: relative;
     width: 32vw;
     border-radius: 50%;
@@ -168,7 +174,7 @@ span {
     cursor: pointer;
 }
 
-.home-img img:hover {
+.home-image img:hover {
     transform: scale(1.01);
     filter: drop-shadow(0 0 25px var(--main-color));
 }
@@ -220,11 +226,11 @@ span {
     box-shadow: 0 0 25px var(--main-color);
 }
 
-.typing-text {
+/* .typing-text {
     font-size: 34px;
     font-weight: 600;
     min-width: 280px;
-    line-height: 1.2; /* Adjust line height if necessary */
+    line-height: 1.2; 
 }
 
 .typing-text span {
@@ -241,11 +247,11 @@ span {
     content: '';
     background-color: var(--bg-color);
     position: absolute;
-    width: calc(100% + 12px); /* Increase width to ensure full coverage */
-    height: 1.4em; /* Increase height to cover the top */
+    width: calc(100% + 12px); 
+    height: 1.4em; 
     border-left: 3px solid var(--bg-color);
-    top: -0.2em; /* Adjust top position to cover the top */
-    right: -10px; /* Adjust right position if needed */
+    top: -0.2em; 
+    right: -10px; 
     animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
 }
 
@@ -286,9 +292,9 @@ span {
     25%, 40%,
     45%, 60%,
     65%, 80%, 85% {
-        width: calc(100% + 12px); /* Increase width to ensure full coverage */
+        width: calc(100% + 12px); 
     }
-}
+}  */
 
 @media (max-width: 1000px) {
     .home {
